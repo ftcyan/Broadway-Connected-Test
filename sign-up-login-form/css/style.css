@@ -1,0 +1,186 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:  #326DDC;
+  transition: .5s ease;
+}
+a:hover {
+  color: #326DDC;
+}
+
+.form {
+  background: white;
+  padding: 10px 60px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid #326DDC;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: white;
+  color: #326DDC;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #326DDC;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: white;
+  color: #326DDC;
+    border-bottom: 3px solid #326DDC;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+::placeholder {
+    color: #326DDC;
+    opacity: 1;
+    font-size: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+h5 {
+
+  color: #326DDC;
+  font-weight: 300;
+  font-size: 12;
+}
+
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #326DDC;
+}
+
+label.active {
+  display: none;
+
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: #f2f2f2;
+  background-image: none;
+  border: 1px solid grey;
+  color:  #326DDC;;
+  border-radius: 20px;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #326DDC;
+}
+
+textarea {
+  border: 2px solid grey;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+
+}
+.button:hover, .button:focus {
+
+}
+
+.button-loginbox {
+  display: block;
+
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  padding: 20px;
+  margin: auto;
+  font-size: 20;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #326DDC;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+
+}
+
+.forgot {
+  margin-top: 5px;
+  text-align: center;
+}
